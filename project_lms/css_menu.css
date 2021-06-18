@@ -1,0 +1,109 @@
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.photo{
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px grey;
+}
+.photo-container{
+    text-align: center;
+    margin: 15px auto;
+    width: 300px;
+    height: 169px;
+}
+.photo-container img{
+    max-width: 100%;
+    width: 300px;
+    height: 169px;
+}
+.photo-overlay{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* for centering text inside. photo */
+    background: rgba(0, 0, 0, .5);
+}
+.white-head{
+    color: white;
+    margin-top: 5%;
+    line-height: 30px;
+    padding-bottom:20px ;
+}
+
+/* photo overlay part */
+.photo-overlay{
+    opacity: 0;
+    transition: opacity .1s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.photo-overlay p{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.photo-overlay:hover{
+    opacity: 1;
+}
+.photo img{
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+.photo:hover img{
+    transform: scale(1.1);
+}
+.form-spacer{
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0 0 ;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+    margin-top: 10%;
+}
+
+.terms:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+.submit input[type="submit"] {
+    color: black;
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3% color 0.3% background-color 0.3%;
+    border-radius: 7px;
+    background-color: gold;
+    box-shadow: 1px 1px 4px 0 #fff332;
+
+}

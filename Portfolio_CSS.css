@@ -146,5 +146,6 @@ input[type=submit] {
     margin: 2px 0;
     border: none;
     border-radius: 4px;
+    
     cursor: pointer;
   }
